@@ -57,7 +57,6 @@ const Header2 = () => {
                                                 <li>Contact Us</li>
                                                 <li>Cart</li>
                                                 <li>Checkout</li>
-                                                <li>Checkout</li>
                                                 <li>Track Order</li>
                                                 <li>Wishlist</li>
                                                 <li>Faq</li>
@@ -111,11 +110,13 @@ const Header2 = () => {
                                     <NavDropdown.Item href="#action/3.1"><Link to={'/about'}>About Us</Link></NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.1"><Link to={'contactUs'}>Contact US</Link></NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2"><Link to={'/cart'}>Cart</Link></NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Track Order</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Faq</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Login</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Register</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Policy</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3"><Link to={'/checkout'}>Checkout</Link></NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3"><Link to={'/trackOrder'}>Track Order</Link></NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3"><Link to={'/wishlist'}>Wishlist</Link></NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3"><Link to={'/faq'}>Faq</Link></NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3"><Link to={'/loginForm'}>Login</Link></NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3"><Link to={'/registerForm'}>Register</Link></NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3"><Link to={'/policy'}>Policy</Link></NavDropdown.Item>
                                 </NavDropdown>
                                 <NavDropdown title="Blog" id="basic-nav-dropdown">
                                     <NavDropdown.Item href="#action/3.1">Left Sidebar</NavDropdown.Item>

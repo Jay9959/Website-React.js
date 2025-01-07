@@ -49,44 +49,46 @@ const OrganicHealthy = () => {
     ];
 
     return (
-        <Container>
-            <div className="mt-5">
-                <Row>
-                    <Col xs={12} md={7}>
-                        <Slider {...settings}>
-                            {products.map((product, index) => (
-                                <Card key={index} className="card-conatnt-img">
-                                    <Card.Img variant="top" src={product.image} />
-                                    <Card.Body>
-                                        <Card.Title><p className="fs-6">{product.BiLogIn}</p></Card.Title>
-                                        <Card.Title>{product.rating}</Card.Title>
-                                        <Card.Title>{product.title}</Card.Title>
-                                        <Card.Text>
-                                            <span style={{ color: "green", fontWeight: "bold" }}>
-                                                {product.price}
-                                            </span>{" "}
-                                            <del>{product.originalPrice}</del>
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            ))}
-                        </Slider>
-                    </Col>
-                    <Col xs={12} md={3}>
-                        <div className="position-relative">
-                            <div className="organicHealthy-img">
-                                <img src="/public/products-rightview.jpg" alt="" />
+        <>
+            <Container>
+                <div className="mt-5">
+                    <Row>
+                        <Col xs={12} md={7}>
+                            <Slider {...settings}>
+                                {products.map((product, index) => (
+                                    <Card key={index} className="card-conatnt-img">
+                                        <Card.Img variant="top" src={product.image} />
+                                        <Card.Body>
+                                            <Card.Title><p className="fs-6">{product.BiLogIn}</p></Card.Title>
+                                            <Card.Title>{product.rating}</Card.Title>
+                                            <Card.Title>{product.title}</Card.Title>
+                                            <Card.Text>
+                                                <span style={{ color: "green", fontWeight: "bold" }}>
+                                                    {product.price}
+                                                </span>{" "}
+                                                <del>{product.originalPrice}</del>
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                ))}
+                            </Slider>
+                        </Col>
+                        <Col xs={12} md={3}>
+                            <div className="position-relative">
+                                <div className="organicHealthy-img">
+                                    <img src="/public/products-rightview.jpg" alt="" />
+                                </div>
+                                <div className="organicHealthy-contant">
+                                    <h2 className="display-6 fw-bold">Organic & Healthy Vegetables</h2>
+                                    <p>25%<span>OFF</span></p>
+                                    <Button variant="success">Shop Now</Button>
+                                </div>
                             </div>
-                            <div className="organicHealthy-contant">
-                                <h2 className="display-6 fw-bold">Organic & Healthy Vegetables</h2>
-                                <p>25%<span>OFF</span></p>
-                                <Button variant="success">Shop Now</Button>
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
-            </div>
-        </Container>
+                        </Col>
+                    </Row>
+                </div>
+            </Container>
+        </>
     );
 };
 

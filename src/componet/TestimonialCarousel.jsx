@@ -54,37 +54,39 @@ const TestimonialCarousel = () => {
     };
 
     return (
-        <Container>
-            <div className="mt-5">
-                <h2 className="text-center mb-4">Great Words From People</h2>
-                <p className="text-center text-muted mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore lacus vel facilisis.
-                </p>
-                <Slider {...settings}>
-                    {testimonials.map((testimonial, index) => (
-                        <div key={index}>
-                            <Card className="text-center p-4 textimonialcarousel-contant">
-                                <Card.Img
-                                    variant="top"
-                                    src={testimonial.image}
-                                    className="rounded-circle mx-auto"
-                                    style={{ width: "100px", height: "100px", objectFit: "cover" }}
-                                />
-                                <Card.Body>
-                                    <Card.Title className="mt-3">{testimonial.name}</Card.Title>
-                                    <Card.Subtitle className="text-muted mb-3">
-                                        {testimonial.role}
-                                    </Card.Subtitle>
-                                    <Card.Text>{testimonial.feedback}</Card.Text>
-                                    <div>{renderStars(testimonial.stars)}</div>
-                                </Card.Body>
-                            </Card>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
-        </Container>
+        <>
+            <Container>
+                <div className="mt-5">
+                    <h2 className="text-center mb-4">Great Words From People</h2>
+                    <p className="text-center text-muted mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore lacus vel facilisis.
+                    </p>
+                    <Slider {...settings}>
+                        {testimonials.map((testimonial, index) => (
+                            <div key={index}>
+                                <Card className="text-center p-4 textimonialcarousel-contant">
+                                    <Card.Img
+                                        variant="top"
+                                        src={testimonial.image}
+                                        className="rounded-circle mx-auto"
+                                        style={{ width: "100px", height: "100px", objectFit: "cover" }}
+                                    />
+                                    <Card.Body>
+                                        <Card.Title className="mt-3">{testimonial.name}</Card.Title>
+                                        <Card.Subtitle className="text-muted mb-3">
+                                            {testimonial.role}
+                                        </Card.Subtitle>
+                                        <Card.Text>{testimonial.feedback}</Card.Text>
+                                        <div>{renderStars(testimonial.stars)}</div>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+            </Container>
+        </>
     );
 };
 

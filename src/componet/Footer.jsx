@@ -12,7 +12,6 @@ const Footer = () => {
             <footer className='position-relative' style={{marginTop : '100px'}}>
                 <div className="container">
                     <Row>
-
                         <Col>
                             <div className='cr-footer-border'>
                                 <div className="footer-logo">

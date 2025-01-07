@@ -14,6 +14,13 @@ import ProductFullWidth from './componet/Product-Full-width.jsx';
 import About from './componet/About.jsx';
 import ContactUs from './componet/ContactUs.jsx';
 import Cart from './componet/Cart.jsx';
+import TrackOrder from './componet/TrackOrder.jsx';
+import Wishlist from './componet/Wishlist.jsx';
+import Faq from './componet/Faq.jsx';
+import LoginForm from './componet/Loging.jsx';
+import RegisterForm from './componet/RegisterForm.jsx';
+import Policy from './componet/Policy.jsx';
+import Checkout from './componet/Checkout.jsx';
 
 const App = () => {
     return (
@@ -32,6 +39,13 @@ const App = () => {
                 <Route path='/about' element={<About />} />
                 <Route path='/contactUs' element={<ContactUs />} />
                 <Route path='/cart' element={<Cart />} />
+                <Route path='/checkout' element={<Checkout />} />
+                <Route path='/trackOrder' element={<TrackOrder />} />
+                <Route path='/wishlist' element={<Wishlist />} />
+                <Route path='/faq' element={<Faq />} />
+                <Route path='/loginForm' element={<LoginForm />} />
+                <Route path='/registerForm' element={<RegisterForm />} />
+                <Route path='/policy' element={<Policy />} />
             </Routes>
             <Footer />
         </>

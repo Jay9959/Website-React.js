@@ -6,7 +6,7 @@ const Crat = () => {
 
     return (
         <Container>
-            <div className="my-5 table-content">
+            <div className="mt-5 table-content">
                 <Table className="w-100">
                     <thead>
                         <tr>
@@ -118,7 +118,7 @@ const Crat = () => {
                             <td className="cart-name">
                                 <a href="javascript:void(0)">
                                     <img src="/public/5dasdas.jpg" alt="" className="cart-img" />
-                                    Organic Peach Fruits 
+                                    Organic Peach Fruits
                                 </a>
                             </td>
                             <td className="cart-price">
@@ -142,7 +142,7 @@ const Crat = () => {
                 </Table>
                 <div>
                     <a href="javacsript:void(0)" className="text-decoration-underline">Continue Shopping</a>
-                    <Button className="bbtn">Check Out</Button>
+                    <Button style={{ marginLeft: "92%" }}>Check Out</Button>
                 </div>
                 <Row>
                     <Col>

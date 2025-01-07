@@ -32,69 +32,71 @@ const products = {
 
 const PopularProducts = () => {
     return (
-        <Container>
-            <div className="mt-5">
-                <h2 className="text-center">Popular Products</h2>
-                <p className="text-center text-muted mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore lacus vel facilisis.
-                </p>
+        <>
+            <Container>
+                <div className="mt-5">
+                    <h2 className="text-center">Popular Products</h2>
+                    <p className="text-center text-muted mb-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore lacus vel facilisis.
+                    </p>
 
-                <Tab.Container defaultActiveKey="all">
-                    <Row>
-                        {/* Sidebar Navigation */}
-                        <Col md={3}>
-                            <Nav className="flex-column">
-                                <Nav.Item>
-                                    <Nav.Link eventKey="all" className="border mt-2 text-success">All</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="snack" className="border mt-2 text-success">Snack</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="vegetable" className="border mt-2 text-success">Vegetable</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="fruit" className="border mt-2 text-success">Fruit</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="bakery" className="border mt-2 text-success">Bakery</Nav.Link>
-                                </Nav.Item>
-                            </Nav>
-                            <img src="/public/product-banner.jpg" alt="" className="mt-4 product-banner-img" />
-                        </Col>
+                    <Tab.Container defaultActiveKey="all">
+                        <Row>
+                            {/* Sidebar Navigation */}
+                            <Col md={3}>
+                                <Nav className="flex-column">
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="all" className="border mt-2 text-success">All</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="snack" className="border mt-2 text-success">Snack</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="vegetable" className="border mt-2 text-success">Vegetable</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="fruit" className="border mt-2 text-success">Fruit</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="bakery" className="border mt-2 text-success">Bakery</Nav.Link>
+                                    </Nav.Item>
+                                </Nav>
+                                <img src="/public/product-banner.jpg" alt="" className="mt-4 product-banner-img" />
+                            </Col>
 
-                        <Col md={9}>
-                            <Tab.Content>
-                                {Object.keys(products).map((key) => (
-                                    <Tab.Pane eventKey={key} key={key}>
-                                        <Row>
-                                            {products[key].map((product) => (
-                                                <Col md={3} key={product.id}>
-                                                    <Card className="product-card">
-                                                        <Card.Img variant="center" src={product.img} alt={product.name} />
-                                                        <Card.Body>
-                                                            <Card.Title>{product.name}</Card.Title>
-                                                            <Card.Text>
-                                                                <span className="text-success">${product.price}</span>{" "}
-                                                                <span className="text-muted text-decoration-line-through">${product.oldPrice}</span>
-                                                            </Card.Text>
-                                                            <Card.Text>
-                                                                <span className="text-warning">★ {product.rating}</span>
-                                                            </Card.Text>
-                                                            <Button variant="outline-success">Add to Cart</Button>
-                                                        </Card.Body>
-                                                    </Card>
-                                                </Col>
-                                            ))}
-                                        </Row>
-                                    </Tab.Pane>
-                                ))}
-                            </Tab.Content>
-                        </Col>
-                    </Row>
-                </Tab.Container>
-            </div>
-        </Container>
+                            <Col md={9}>
+                                <Tab.Content>
+                                    {Object.keys(products).map((key) => (
+                                        <Tab.Pane eventKey={key} key={key}>
+                                            <Row>
+                                                {products[key].map((product) => (
+                                                    <Col md={3} key={product.id}>
+                                                        <Card className="product-card">
+                                                            <Card.Img variant="center" src={product.img} alt={product.name} />
+                                                            <Card.Body>
+                                                                <Card.Title>{product.name}</Card.Title>
+                                                                <Card.Text>
+                                                                    <span className="text-success">${product.price}</span>{" "}
+                                                                    <span className="text-muted text-decoration-line-through">${product.oldPrice}</span>
+                                                                </Card.Text>
+                                                                <Card.Text>
+                                                                    <span className="text-warning">★ {product.rating}</span>
+                                                                </Card.Text>
+                                                                <Button variant="outline-success">Add to Cart</Button>
+                                                            </Card.Body>
+                                                        </Card>
+                                                    </Col>
+                                                ))}
+                                            </Row>
+                                        </Tab.Pane>
+                                    ))}
+                                </Tab.Content>
+                            </Col>
+                        </Row>
+                    </Tab.Container>
+                </div>
+            </Container>
+        </>
     );
 }
 

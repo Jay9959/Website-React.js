@@ -67,95 +67,97 @@ const About = () => {
     return (
         <>
             <Container>
-                <Row>
-                    <div className="col-6">
-                        <div className="about-contant mt-5">
-                            <h2>About The Carrot</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, recusandae necessitatibus quasi incidunt alias adipisci pariatur earum iure beatae assumenda rerum quod. Tempora magni autem a voluptatibus neque.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vitae rerum cum accusamus magni consequuntur architecto, ipsum deleniti expedita doloribus suscipit voluptatum eius perferendis amet!.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, maxime amet architecto est exercitationem optio ea maiores corporis beatae, dolores doloribus libero nesciunt qui illum? Voluptates deserunt adipisci voluptatem magni sunt sed blanditiis quod aspernatur! Iusto?</p>
+                <div className="mt-5">
+                    <Row>
+                        <div className="col-6">
+                            <div className="about-contant mt-5">
+                                <h2>About The Carrot</h2>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, recusandae necessitatibus quasi incidunt alias adipisci pariatur earum iure beatae assumenda rerum quod. Tempora magni autem a voluptatibus neque.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vitae rerum cum accusamus magni consequuntur architecto, ipsum deleniti expedita doloribus suscipit voluptatum eius perferendis amet!.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, maxime amet architecto est exercitationem optio ea maiores corporis beatae, dolores doloribus libero nesciunt qui illum? Voluptates deserunt adipisci voluptatem magni sunt sed blanditiis quod aspernatur! Iusto?</p>
+                            </div>
+                            <Row className="gap-3">
+                                <Col xs={10} md={3}>
+                                    <Counter target={1.2} label="Vendors" />
+                                </Col>
+                                <Col xs={10} md={3}>
+                                    <Counter target={410} label="Customers" />
+                                </Col>
+                                <Col xs={10} md={3}>
+                                    <Counter target={34} label="Products" />
+                                </Col>
+                            </Row>
                         </div>
-                        <Row className="gap-3">
-                            <Col xs={10} md={3}>
-                                <Counter target={1.2} label="Vendors" />
-                            </Col>
-                            <Col xs={10} md={3}>
-                                <Counter target={410} label="Customers" />
-                            </Col>
-                            <Col xs={10} md={3}>
-                                <Counter target={34} label="Products" />
-                            </Col>
-                        </Row>
+                        <div className="col-6">
+                            <div className="about-img mt-5">
+                                <img src="/public/about.jpg" alt="" className="rounded-2" />
+                            </div>
+                        </div>
+                    </Row>
+                    <div className="slider-container mt-5">
+                        <Slider {...settings}>
+                            <div className="p-2 mt-5">
+                                <div className="border text-center">
+                                    <div className="flex justify-center mb-4">
+                                        <div className="text-success fs-1">
+                                            <RiRedPacketLine />
+                                        </div>
+                                    </div>
+                                    <h5>
+                                        Product Packing
+                                    </h5>
+                                    <p className="text-secondary">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="p-2 mt-5">
+                                <div className="border text-center">
+                                    <div className="flex justify-center mb-4">
+                                        <div className="text-success fs-1">
+                                            <RiCustomerService2Line />
+                                        </div>
+                                    </div>
+                                    <h5>
+                                        24X7 Support
+                                    </h5>
+                                    <p className="text-secondary">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="p-2 mt-5">
+                                <div className="border text-center">
+                                    <div className="flex justify-center mb-4">
+                                        <div className="text-success fs-1">
+                                            <BsTruck />
+                                        </div>
+                                    </div>
+                                    <h5>
+                                        Delivery in 5 Days
+                                    </h5>
+                                    <p className="text-secondary">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="p-2 mt-5">
+                                <div className="border text-center">
+                                    <div className="flex justify-center mb-4">
+                                        <div className="text-success fs-1">
+                                            <RiMoneyDollarBoxLine />
+                                        </div>
+                                    </div>
+                                    <h5>
+                                        Payment Secure
+                                    </h5>
+                                    <p className="text-secondary">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                    </p>
+                                </div>
+                            </div>
+                        </Slider>
                     </div>
-                    <div className="col-6">
-                        <div className="about-img mt-5">
-                            <img src="/public/about.jpg" alt="" className="rounded-2" />
-                        </div>
-                    </div>
-                </Row>
-                <div className="slider-container mt-5">
-                    <Slider {...settings}>
-                        <div className="p-2 mt-5">
-                            <div className="border text-center">
-                                <div className="flex justify-center mb-4">
-                                    <div className="text-success fs-1">
-                                        <RiRedPacketLine />
-                                    </div>
-                                </div>
-                                <h5>
-                                    Product Packing
-                                </h5>
-                                <p className="text-secondary">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="p-2 mt-5">
-                            <div className="border text-center">
-                                <div className="flex justify-center mb-4">
-                                    <div className="text-success fs-1">
-                                        <RiCustomerService2Line />
-                                    </div>
-                                </div>
-                                <h5>
-                                    24X7 Support
-                                </h5>
-                                <p className="text-secondary">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="p-2 mt-5">
-                            <div className="border text-center">
-                                <div className="flex justify-center mb-4">
-                                    <div className="text-success fs-1">
-                                        <BsTruck />
-                                    </div>
-                                </div>
-                                <h5>
-                                    Delivery in 5 Days
-                                </h5>
-                                <p className="text-secondary">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="p-2 mt-5">
-                            <div className="border text-center">
-                                <div className="flex justify-center mb-4">
-                                    <div className="text-success fs-1">
-                                        <RiMoneyDollarBoxLine />
-                                    </div>
-                                </div>
-                                <h5>
-                                    Payment Secure
-                                </h5>
-                                <p className="text-secondary">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing.
-                                </p>
-                            </div>
-                        </div>
-                    </Slider>
                 </div>
 
             </Container>

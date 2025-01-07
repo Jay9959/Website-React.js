@@ -56,44 +56,46 @@ const NewsCarousel = () => {
     };
 
     return (
-        <Container>
-            <div className="mt-5">
-                <h2 className="text-center mb-4">Latest News</h2>
-                <p className="text-center text-muted mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore lacus vel facilisis.
-                </p>
-                <Slider {...settings}>
-                    {news.map((item, index) => (
-                        <div key={index}>
-                            <Card className="newsCarousel-contant">
-                                <Card.Body>
-                                    <Card.Subtitle className="">
-                                        By {item.author} | {item.category}
-                                    </Card.Subtitle>
-                                    <Card.Title className="" style={{ fontSize: "1.1rem" }}>
-                                        {item.title}
-                                    </Card.Title>
-                                    <Card.Link href={item.link} className="text-success">
-                                        Read More →
-                                    </Card.Link>
-                                </Card.Body>
-                                <div className="position-relative">
-                                    <Card.Img
-                                        variant="top"
-                                        src={item.image}
-                                        alt="News Image"
-                                    />
-                                    <Badge className="position-absolute newsCarousel-span fs-6 bottom-0 end-0 m-2 p-4" >
-                                        {item.date}
-                                    </Badge>
-                                </div>
-                            </Card>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
-        </Container>
+        <>
+            <Container>
+                <div className="mt-5">
+                    <h2 className="text-center mb-4">Latest News</h2>
+                    <p className="text-center text-muted mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore lacus vel facilisis.
+                    </p>
+                    <Slider {...settings}>
+                        {news.map((item, index) => (
+                            <div key={index}>
+                                <Card className="newsCarousel-contant">
+                                    <Card.Body>
+                                        <Card.Subtitle className="">
+                                            By {item.author} | {item.category}
+                                        </Card.Subtitle>
+                                        <Card.Title className="" style={{ fontSize: "1.1rem" }}>
+                                            {item.title}
+                                        </Card.Title>
+                                        <Card.Link href={item.link} className="text-success">
+                                            Read More →
+                                        </Card.Link>
+                                    </Card.Body>
+                                    <div className="position-relative">
+                                        <Card.Img
+                                            variant="top"
+                                            src={item.image}
+                                            alt="News Image"
+                                        />
+                                        <Badge className="position-absolute newsCarousel-span fs-6 bottom-0 end-0 m-2 p-4" >
+                                            {item.date}
+                                        </Badge>
+                                    </div>
+                                </Card>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+            </Container>
+        </>
     );
 };
 

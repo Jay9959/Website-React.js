@@ -15,72 +15,74 @@ const SwiperSlide = () => {
         cssEase: "linear"
     };
     return (
-        <Container>
-            <div className="slider-container mt-5">
-                <Slider {...settings}>
-                    <div className="p-2 mt-5">
-                        <div className="border text-center">
-                            <div className="flex justify-center mb-4">
-                                <div className="text-success fs-1">
-                                    <RiRedPacketLine />
+        <>
+            <Container>
+                <div className="slider-container mt-5">
+                    <Slider {...settings}>
+                        <div className="p-2 mt-5">
+                            <div className="border text-center">
+                                <div className="flex justify-center mb-4">
+                                    <div className="text-success fs-1">
+                                        <RiRedPacketLine />
+                                    </div>
                                 </div>
+                                <h5>
+                                    Product Packing
+                                </h5>
+                                <p className="text-secondary">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                </p>
                             </div>
-                            <h5>
-                                Product Packing
-                            </h5>
-                            <p className="text-secondary">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing.
-                            </p>
                         </div>
-                    </div>
-                    <div className="p-2 mt-5">
-                        <div className="border text-center">
-                            <div className="flex justify-center mb-4">
-                                <div className="text-success fs-1">
-                                    <RiCustomerService2Line />
+                        <div className="p-2 mt-5">
+                            <div className="border text-center">
+                                <div className="flex justify-center mb-4">
+                                    <div className="text-success fs-1">
+                                        <RiCustomerService2Line />
+                                    </div>
                                 </div>
+                                <h5>
+                                    24X7 Support
+                                </h5>
+                                <p className="text-secondary">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                </p>
                             </div>
-                            <h5>
-                                24X7 Support
-                            </h5>
-                            <p className="text-secondary">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing.
-                            </p>
                         </div>
-                    </div>
-                    <div className="p-2 mt-5">
-                        <div className="border text-center">
-                            <div className="flex justify-center mb-4">
-                                <div className="text-success fs-1">
-                                    <BsTruck />
+                        <div className="p-2 mt-5">
+                            <div className="border text-center">
+                                <div className="flex justify-center mb-4">
+                                    <div className="text-success fs-1">
+                                        <BsTruck />
+                                    </div>
                                 </div>
+                                <h5>
+                                    Delivery in 5 Days
+                                </h5>
+                                <p className="text-secondary">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                </p>
                             </div>
-                            <h5>
-                                Delivery in 5 Days
-                            </h5>
-                            <p className="text-secondary">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing.
-                            </p>
                         </div>
-                    </div>
-                    <div className="p-2 mt-5">
-                        <div className="border text-center">
-                            <div className="flex justify-center mb-4">
-                                <div className="text-success fs-1">
-                                    <RiMoneyDollarBoxLine />
+                        <div className="p-2 mt-5">
+                            <div className="border text-center">
+                                <div className="flex justify-center mb-4">
+                                    <div className="text-success fs-1">
+                                        <RiMoneyDollarBoxLine />
+                                    </div>
                                 </div>
+                                <h5>
+                                    Payment Secure
+                                </h5>
+                                <p className="text-secondary">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                </p>
                             </div>
-                            <h5>
-                                Payment Secure
-                            </h5>
-                            <p className="text-secondary">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing.
-                            </p>
                         </div>
-                    </div>
-                </Slider>
-            </div>
-        </Container>
+                    </Slider>
+                </div>
+            </Container>
+        </>
     );
 }
 

@@ -25,7 +25,7 @@ const Banner = () => {
                     </div>
                     <Container>
                         <div className="position-absolute start-50px" style={{ top: '30%' }}>
-                            <h5 className="text-success"><span className="text-decoration-underline">100%</span> Organic Vegetables</h5>
+                            <h5 ><span className="text-decoration-underline text-success">100%</span> Organic Vegetables</h5>
                             <h1 className="display-4 fw-bold my-4">Explore fresh &<br />juicy fruits.</h1>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit<br />Amet
@@ -49,7 +49,7 @@ const Banner = () => {
                     </div>
                     <Container>
                         <div className="position-absolute start-50px" style={{ top: '30%' }}>
-                            <h5 className="text-success"><span className="text-decoration-underline">100%</span> Organic Vegetables</h5>
+                            <h5><span className="text-decoration-underline text-success">100%</span> Organic Vegetables</h5>
                             <h1 className="display-4 fw-bold my-4">The best way to<br />stuff your wallet.</h1>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit<br />Amet

@@ -12,7 +12,7 @@ const Style3 = () => {
                 </div>
                 <Row>
                     <Col>
-                        <Card className="p-3 mt-5" style={{ width: '19rem' }}>
+                        <Card className="p-3 mt-5" style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="/public/Styl5.jpg" className="border rounded-3" />
                             <Card.Body className="text-center">
                                 <span>Organic fresh lemon</span>
@@ -23,7 +23,7 @@ const Style3 = () => {
                                     <IoMdStar />
                                     <IoMdStar />
                                 </div>
-                                <Card.Title className="fs-6 my-2">Lorem ipsum dolor adipisicing elit.</Card.Title>
+                                <Card.Title className="fs-6 my-2 text-secondary">Lorem ipsum dolor impicit  adipisicing elit.</Card.Title>
                                 <Card.Text className="fs-5 text-success fw-bold">
                                     $145
                                     <span className="ms-3 fs-6 text-body-tertiary"><s>$150</s></span>
@@ -32,7 +32,7 @@ const Style3 = () => {
                         </Card>
                     </Col>
                     <Col>
-                        <Card className="p-3 mt-5" style={{ width: '19rem' }}>
+                        <Card className="p-3 mt-5" style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="/public/Styl2.jpg" className="border rounded-3" />
                             <Card.Body className="text-center">
                                 <span>Organic fresh apple juice</span>
@@ -43,7 +43,7 @@ const Style3 = () => {
                                     <IoMdStar />
                                     <IoMdStar />
                                 </div>
-                                <Card.Title className="fs-6 my-2">Lorem ipsum dolor adipisicing elit.</Card.Title>
+                                <Card.Title className="fs-6 my-2 text-secondary">Lorem ipsum dolor impicit  adipisicing elit.</Card.Title>
                                 <Card.Text className="fs-5 text-success fw-bold">
                                     $120.25
                                     <span className="ms-3 fs-6 text-body-tertiary"><s>$123.25</s></span>
@@ -52,7 +52,7 @@ const Style3 = () => {
                         </Card>
                     </Col>
                     <Col>
-                        <Card className="p-3 mt-5" style={{ width: '19rem' }}>
+                        <Card className="p-3 mt-5" style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="/public/Styl3.jpg" className="border rounded-3" />
                             <Card.Body className="text-center">
                                 <span>Organic fresh venila farm 5kg</span>
@@ -63,7 +63,7 @@ const Style3 = () => {
                                     <IoMdStar />
                                     <IoMdStar />
                                 </div>
-                                <Card.Title className="fs-6 my-2">Lorem ipsum dolor adipisicing elit.</Card.Title>
+                                <Card.Title className="fs-6 my-2 text-secondary">Lorem ipsum dolor impicit  adipisicing elit.</Card.Title>
                                 <Card.Text className="fs-5 text-success fw-bold">
                                     $50.30
                                     <span className="ms-3 fs-6 text-body-tertiary"><s>$72.60</s></span>
@@ -72,7 +72,7 @@ const Style3 = () => {
                         </Card>
                     </Col>
                     <Col>
-                        <Card className="p-3 mt-5" style={{ width: '19rem' }}>
+                        <Card className="p-3 mt-5" style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="/public/Styl6.jpg" className="border rounded-3" />
                             <Card.Body className="text-center">
                                 <span>Organic fresh venila farm 5kg</span>
@@ -83,7 +83,7 @@ const Style3 = () => {
                                     <IoMdStar />
                                     <IoMdStar />
                                 </div>
-                                <Card.Title className="fs-6 my-2">Lorem ipsum dolor adipisicing elit.</Card.Title>
+                                <Card.Title className="fs-6 my-2 text-secondary">Lorem ipsum dolor impicit  adipisicing elit.</Card.Title>
                                 <Card.Text className="fs-5 text-success fw-bold">
                                     $50.30
                                     <span className="ms-3 fs-6 text-body-tertiary"><s>$72.60</s></span>

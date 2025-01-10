@@ -21,6 +21,13 @@ import LoginForm from './componet/Loging.jsx';
 import RegisterForm from './componet/RegisterForm.jsx';
 import Policy from './componet/Policy.jsx';
 import Checkout from './componet/Checkout.jsx';
+import LeftSidebar from './componet/Left-Sidebar.jsx';
+import RightSidebar from './componet/Right-Sidebar.jsx';
+import FullWidth from './componet/Full-Width.jsx';
+import DetailLeftSidebar from './componet/Detail-Left-Sidebar.jsx';
+import DetailRightSidebar from './componet/Detail-Right-Sidebar.jsx';
+import DetailFullWidth from './componet/Detail-Full-Width.jsx';
+import Products from './componet/Products.jsx';
 
 const App = () => {
     return (
@@ -46,6 +53,13 @@ const App = () => {
                 <Route path='/loginForm' element={<LoginForm />} />
                 <Route path='/registerForm' element={<RegisterForm />} />
                 <Route path='/policy' element={<Policy />} />
+                <Route path='/leftSidebar' element={<LeftSidebar />} />
+                <Route path='/rightSidebar' element={<RightSidebar />} />
+                <Route path='/fullWidth' element={<FullWidth />} />
+                <Route path='/detailLeftSidebar' element={<DetailLeftSidebar />} />
+                <Route path='/detailRightSidebar' element={<DetailRightSidebar />} />
+                <Route path='/detailFullWidth' element={<DetailFullWidth />} />
+                <Route path='/products' element={<Products />} />
             </Routes>
             <Footer />
         </>

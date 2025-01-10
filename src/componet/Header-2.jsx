@@ -119,17 +119,17 @@ const Header2 = () => {
                                     <NavDropdown.Item href="#action/3.3"><Link to={'/policy'}>Policy</Link></NavDropdown.Item>
                                 </NavDropdown>
                                 <NavDropdown title="Blog" id="basic-nav-dropdown">
-                                    <NavDropdown.Item href="#action/3.1">Left Sidebar</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.2">Right Sidebar</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Full Width</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Detail Left Sidebar</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Detail Right Sidebar</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Detail Full Width</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.1"><Link to={'/leftSidebar'}>Left Sidebar</Link></NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.2"><Link to={'/rightSidebar'}>Right Sidebar</Link></NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3"><Link to={'/fullWidth'}>Full Width</Link></NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3"><Link to={'/detailLeftSidebar'}>Detail Left Sidebar</Link></NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3"><Link to={'/detailRightSidebar'}>Detail Right Sidebar</Link></NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3"><Link to={'/detailFullWidth'}>Detail Full Width</Link></NavDropdown.Item>
                                 </NavDropdown>
                                 <NavDropdown title="Elements" id="basic-nav-dropdown">
-                                    <NavDropdown.Item href="#action/3.1">Shop Left sidebar</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.2">Shop Right sidebar</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Full Width</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.1"><Link to={'/products'}>Products</Link></NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.2">Typography</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3">Buttons</NavDropdown.Item>
                                 </NavDropdown>
                             </Nav>
                             <div className=" ms-5 ">

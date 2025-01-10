@@ -1,6 +1,5 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { IoMdStar, IoMdStarOutline } from "react-icons/io";
-import { IoBagOutline } from "react-icons/io5";
 
 const Style1 = () => {
     return (
@@ -13,11 +12,10 @@ const Style1 = () => {
                 </div>
                 <Row>
                     <Col>
-                        <Card className="p-3 mt-5" style={{ width: '19rem' }}>
+                        <Card className="p-3 mt-5" style={{ width: '18rem' }}>
 
                             <div className=" position-relative">
                                 <Card.Img variant="top" src="/public/Styl1.jpg" className="border rounded-3" />
-                                <IoBagOutline className="position-absolute start-50 bottom-0 text-success m-2" />
                             </div>
 
                             <Card.Body className="text-center">
@@ -39,12 +37,11 @@ const Style1 = () => {
                         </Card>
                     </Col>
                     <Col>
-                        <Card className="p-3 mt-5" style={{ width: '19rem' }}>
+                        <Card className="p-3 mt-5" style={{ width: '18rem' }}>
                             <div className=" position-relative">
                                 <Card.Img variant="top" src="/public/Styl2.jpg" className="border rounded-3" />
-                                <IoBagOutline className="position-absolute d-flex justify-content-center align-items-center start-50 bottom-0 text-success m-2" />
                             </div>
-                            
+
                             <Card.Body className="text-center">
                                 <span className="text-body-tertiary" style={{ fontSize: '13px' }}>Fruits</span>
                                 <div className="start fs-5" style={{ color: '#f5885f' }}>
@@ -64,10 +61,9 @@ const Style1 = () => {
                         </Card>
                     </Col>
                     <Col>
-                        <Card className="p-3 mt-5" style={{ width: '19rem' }}>
+                        <Card className="p-3 mt-5" style={{ width: '18rem' }}>
                             <div className=" position-relative">
                                 <Card.Img variant="top" src="/public/Styl3.jpg" className="border rounded-3" />
-                                <IoBagOutline className="position-absolute d-flex justify-content-center align-items-center start-50 bottom-0 text-success m-2" />
                             </div>
                             <Card.Body className="text-center">
                                 <span className="text-body-tertiary" style={{ fontSize: '13px' }}>Fruits</span>
@@ -88,10 +84,9 @@ const Style1 = () => {
                         </Card>
                     </Col>
                     <Col>
-                        <Card className="p-3 mt-5" style={{ width: '19rem' }}>
-                        <div className=" position-relative">
+                        <Card className="p-3 mt-5" style={{ width: '18rem' }}>
+                            <div className=" position-relative">
                                 <Card.Img variant="top" src="/public/Styl4.jpg" className="border rounded-3" />
-                                <IoBagOutline className="position-absolute start-50 bottom-0 text-success m-2" />
                             </div>
                             <Card.Body className="text-center">
                                 <span className="text-body-tertiary" style={{ fontSize: '13px' }}>Snacks</span>

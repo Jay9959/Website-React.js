@@ -5,9 +5,55 @@ import { GoEye } from "react-icons/go";
 import { IoMdStar } from "react-icons/io";
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import { IoBagOutline } from "react-icons/io5";
 
 const ProductFullWidth = () => {
+
+    const [reviews, setReviews] = useState([
+        {
+            id: 1,
+            image: '/public/1 (2).jpg',
+            name: "Oreo Noman",
+            date: "Jan 08, 2024",
+            comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente doloribus debitis corporis.",
+            rating: 5,
+        },
+        {
+            id: 2,
+            image: '/public/TestimonialCarouse2.jpg',
+            name: "Lina Wilson",
+            date: "Mar 22, 2024",
+            comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente doloribus debitis corporis.",
+            rating: 4,
+        },
+    ]);
+
+    const [newReview, setNewReview] = useState({
+        name: "",
+        email: "",
+        comment: "",
+        rating: 3,
+    });
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setNewReview({ ...newReview, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (newReview.name && newReview.email && newReview.comment) {
+            const date = new Date().toLocaleDateString("en-US", {
+                month: "short",
+                day: "numeric",
+                year: "numeric",
+            });
+            setReviews([
+                ...reviews,
+                { ...newReview, id: reviews.length + 1, date: date },
+            ]);
+            setNewReview({ name: "", email: "", comment: "", rating: 3 });
+        }
+    };
 
     const [count, setCount] = useState(1);
 
@@ -21,7 +67,7 @@ const ProductFullWidth = () => {
             <Container>
                 <div className="mt-5">
                     <Row>
-                        <div className="col-lg-9 w-100 mt-5">
+                        <div className="w-100 mt-5">
                             <Row>
                                 <Col md={6}>
                                     <Card>
@@ -238,8 +284,80 @@ const ProductFullWidth = () => {
                                                 </div>
                                             </div>
                                         </Tab>
-                                        <Tab eventKey="contact" title="Review" disabled>
-                                            Tab content for Contact
+                                        <Tab eventKey="contact" title="Review">
+                                            {reviews.map((review) => (
+                                                <Row key={review.id} className="mb-3">
+                                                    <Col md={2} className="text-center">
+                                                        <div>
+                                                            <img
+                                                                src={review.image}
+                                                                alt="User"
+                                                                className="rounded-2 w-50"
+                                                            />
+                                                        </div>
+                                                    </Col>
+                                                    <Col md={10}>
+                                                        <div>
+                                                            <strong>{review.name}</strong> <span>({review.date})</span>
+                                                        </div>
+                                                        <div>
+                                                            {"★".repeat(review.rating) + "☆".repeat(5 - review.rating)}
+                                                        </div>
+                                                        <p>{review.comment}</p>
+                                                    </Col>
+                                                </Row>
+                                            ))}
+                                            <p className="my-3 text-secondary">Add a Review</p>
+                                            <Form onSubmit={handleSubmit}>
+                                                <Form.Group className="mb-3">
+                                                    <Form.Label>Your Rating</Form.Label>
+                                                    <Form.Select
+                                                        name="rating"
+                                                        value={newReview.rating}
+                                                        onChange={handleInputChange}
+                                                    >
+                                                        <option value="5">★★★★★</option>
+                                                        <option value="4">★★★★☆</option>
+                                                        <option value="3">★★★☆☆</option>
+                                                        <option value="2">★★☆☆☆</option>
+                                                        <option value="1">★☆☆☆☆</option>
+                                                    </Form.Select>
+                                                </Form.Group>
+                                                <Form.Group className="mb-3">
+                                                    <Form.Label>Name</Form.Label>
+                                                    <Form.Control
+                                                        type="text"
+                                                        name="name"
+                                                        value={newReview.name}
+                                                        onChange={handleInputChange}
+                                                        required
+                                                    />
+                                                </Form.Group>
+                                                <Form.Group className="mb-3">
+                                                    <Form.Label>Email</Form.Label>
+                                                    <Form.Control
+                                                        type="email"
+                                                        name="email"
+                                                        value={newReview.email}
+                                                        onChange={handleInputChange}
+                                                        required
+                                                    />
+                                                </Form.Group>
+                                                <Form.Group className="mb-3">
+                                                    <Form.Label>Comment</Form.Label>
+                                                    <Form.Control
+                                                        as="textarea"
+                                                        name="comment"
+                                                        value={newReview.comment}
+                                                        onChange={handleInputChange}
+                                                        rows={3}
+                                                        required
+                                                    />
+                                                </Form.Group>
+                                                <Button type="submit" variant="primary">
+                                                    Submit
+                                                </Button>
+                                            </Form>
                                         </Tab>
                                     </Tabs>
                                 </Col>
@@ -252,7 +370,6 @@ const ProductFullWidth = () => {
 
                                 <div className="position-relative">
                                     <Card.Img variant="top" src="/public/Styl1.jpg" className="border rounded-3" />
-                                    <IoBagOutline className="position-absolute start-50 bottom-0 text-success m-2" />
                                 </div>
 
                                 <Card.Body className="text-center">
@@ -278,7 +395,6 @@ const ProductFullWidth = () => {
 
                                 <div className="position-relative">
                                     <Card.Img variant="top" src="/public/Styl2.jpg" className="border rounded-3" />
-                                    <IoBagOutline className="position-absolute start-50 bottom-0 text-success m-2" />
                                 </div>
 
                                 <Card.Body className="text-center">
@@ -304,7 +420,6 @@ const ProductFullWidth = () => {
 
                                 <div className="position-relative">
                                     <Card.Img variant="top" src="/public/Styl3.jpg" className="border rounded-3" />
-                                    <IoBagOutline className="position-absolute start-50 bottom-0 text-success m-2" />
                                 </div>
 
                                 <Card.Body className="text-center">
@@ -330,7 +445,6 @@ const ProductFullWidth = () => {
 
                                 <div className="position-relative">
                                     <Card.Img variant="top" src="/public/Styl2.jpg" className="border rounded-3" />
-                                    <IoBagOutline className="position-absolute start-50 bottom-0 text-success m-2" />
                                 </div>
 
                                 <Card.Body className="text-center">
@@ -356,7 +470,6 @@ const ProductFullWidth = () => {
 
                                 <div className="position-relative">
                                     <Card.Img variant="top" src="/public/Styl3.jpg" className="border rounded-3" />
-                                    <IoBagOutline className="position-absolute start-50 bottom-0 text-success m-2" />
                                 </div>
 
                                 <Card.Body className="text-center">

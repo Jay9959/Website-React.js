@@ -1,5 +1,4 @@
 import { Tab, Nav, Row, Col, Card, Button, Container } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const products = {
     all: [

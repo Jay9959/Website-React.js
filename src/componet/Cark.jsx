@@ -1,31 +1,31 @@
-import { Tab, Nav, Row, Col, Card, Container } from "react-bootstrap";
+import { Tab, Nav, Row, Col, Card, Container, Button } from "react-bootstrap";
 
 const Cark = () => {
     return (
         <>
             <Container>
-                <div className=" mt-5">
+                <div className="mt-5">
                     <Tab.Container defaultActiveKey="cake-milk">
                         <Row>
                             <Col sm={3}>
-                                <Nav variant="pills" className="flex-column">
+                                <Nav variant="pills" className="flex-column nav-link-cards">
                                     <Nav.Item>
-                                        <Nav.Link className="text-success" eventKey="cake-milk">Cake & Milk (65 items)</Nav.Link>
+                                        <Nav.Link className="nav-link-card" eventKey="cake-milk">Cake & Milk <br/> <span className="nav-link-card-span">(65 items)</span></Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link className="text-success" eventKey="fresh-meat">Fresh Meat (30 items)</Nav.Link>
+                                        <Nav.Link className="nav-link-card" eventKey="fresh-meat">Fresh Meat <br/> <span className="nav-link-card-span">(30 items)</span></Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link className="text-success" eventKey="vegetables">Vegetables (25 items)</Nav.Link>
+                                        <Nav.Link className="nav-link-card" eventKey="vegetables">Vegetables <br/> <span className="nav-link-card-span">(25 items)</span></Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link className="text-success" eventKey="apple-mango">Apple & Mango (45 items)</Nav.Link>
+                                        <Nav.Link className="nav-link-card" eventKey="apple-mango">Apple & Mango <br/> <span className="nav-link-card-span">(45 items)</span></Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link className="text-success" eventKey="strawberry">Strawberry (68 items)</Nav.Link>
+                                        <Nav.Link className="nav-link-card" eventKey="strawberry">Strawberry <br/> <span className="nav-link-card-span">(68 items)</span></Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link className="text-success">
+                                        <Nav.Link className="nav-link-card">
                                             View More
                                         </Nav.Link>
                                     </Nav.Item>
@@ -37,30 +37,32 @@ const Cark = () => {
                                     <Tab.Pane eventKey="cake-milk">
                                         <Row>
                                             <Col md={6}>
-                                                <Card className="hover-card">
+                                                <Card>
                                                     <Card.Img
                                                         variant="top"
-                                                        src="https://via.placeholder.com/300x200?text=Cake"
+                                                        src="/public/cark1.jpg"
                                                         alt="Cake"
+                                                        className="position-relative"
                                                     />
-                                                    <div className="discount-badge">50% OFF</div>
-                                                    <Card.Body>
+                                                    <div className="position-absolute m-3 fs-1 text-white fw-bold">50% <small className="fs-6">OFF</small></div>
+                                                    <Card.Body className="position-absolute text-center text-white fw-bold" style={{ left: '35%', bottom: '15px' }}>
                                                         <Card.Title>Cake</Card.Title>
-                                                        <button className="btn btn-success">Shop Now</button>
+                                                        <Button className="btn btn-success fw-bold">Shop Now</Button>
                                                     </Card.Body>
                                                 </Card>
                                             </Col>
                                             <Col md={6}>
-                                                <Card className="hover-card">
+                                                <Card>
                                                     <Card.Img
                                                         variant="top"
-                                                        src="https://via.placeholder.com/300x200?text=Milk"
-                                                        alt="Milk"
+                                                        src="/public/cark2.jpg"
+                                                        alt="Cake"
+                                                        className="position-relative"
                                                     />
-                                                    <div className="discount-badge">40% OFF</div>
-                                                    <Card.Body>
-                                                        <Card.Title>Milk</Card.Title>
-                                                        <button className="btn btn-success">Shop Now</button>
+                                                    <div className="position-absolute m-3 fs-1 text-white fw-bold">50% <small className="fs-6">OFF</small></div>
+                                                    <Card.Body className="position-absolute text-center text-white fw-bold" style={{ left: '35%', bottom: '15px' }}>
+                                                        <Card.Title>Cake</Card.Title>
+                                                        <Button className="btn btn-success fw-bold">Shop Now</Button>
                                                     </Card.Body>
                                                 </Card>
                                             </Col>
@@ -70,163 +72,143 @@ const Cark = () => {
                                     <Tab.Pane eventKey="fresh-meat">
                                         <Row>
                                             <Col md={6}>
-                                                <Card className="hover-card">
+                                                <Card>
                                                     <Card.Img
                                                         variant="top"
-                                                        src="https://via.placeholder.com/300x200?text=Cake"
+                                                        src="/public/mest1.jpg"
                                                         alt="Cake"
+                                                        className="position-relative"
                                                     />
-                                                    <div className="discount-badge">50% OFF</div>
-                                                    <Card.Body>
+                                                    <div className="position-absolute m-3 fs-1 text-white fw-bold">50% <small className="fs-6">OFF</small></div>
+                                                    <Card.Body className="position-absolute text-center text-white fw-bold" style={{ left: '35%', bottom: '15px' }}>
                                                         <Card.Title>Cake</Card.Title>
-                                                        <button className="btn btn-success">Shop Now</button>
+                                                        <Button className="btn btn-success fw-bold">Shop Now</Button>
                                                     </Card.Body>
                                                 </Card>
                                             </Col>
                                             <Col md={6}>
-                                                <Card className="hover-card">
+                                                <Card>
                                                     <Card.Img
                                                         variant="top"
-                                                        src="https://via.placeholder.com/300x200?text=Milk"
-                                                        alt="Milk"
+                                                        src="/public/mest2.jpg"
+                                                        alt="Cake"
+                                                        className="position-relative"
                                                     />
-                                                    <div className="discount-badge">40% OFF</div>
-                                                    <Card.Body>
-                                                        <Card.Title>Milk</Card.Title>
-                                                        <button className="btn btn-success">Shop Now</button>
+                                                    <div className="position-absolute m-3 fs-1 text-white fw-bold">50% <small className="fs-6">OFF</small></div>
+                                                    <Card.Body className="position-absolute text-center text-white fw-bold" style={{ left: '35%', bottom: '15px' }}>
+                                                        <Card.Title>Cake</Card.Title>
+                                                        <Button className="btn btn-success fw-bold">Shop Now</Button>
                                                     </Card.Body>
                                                 </Card>
                                             </Col>
                                         </Row>
                                     </Tab.Pane>
+
                                     <Tab.Pane eventKey="vegetables">
                                         <Row>
                                             <Col md={6}>
-                                                <Card className="hover-card">
+                                                <Card>
                                                     <Card.Img
                                                         variant="top"
-                                                        src="https://via.placeholder.com/300x200?text=Cake"
+                                                        src="/public/vegetables1.jpg"
                                                         alt="Cake"
+                                                        className="position-relative"
                                                     />
-                                                    <div className="discount-badge">50% OFF</div>
-                                                    <Card.Body>
+                                                    <div className="position-absolute m-3 fs-1 text-white fw-bold">50% <small className="fs-6">OFF</small></div>
+                                                    <Card.Body className="position-absolute text-center text-white fw-bold" style={{ left: '35%', bottom: '15px' }}>
                                                         <Card.Title>Cake</Card.Title>
-                                                        <button className="btn btn-success">Shop Now</button>
+                                                        <Button className="btn btn-success fw-bold">Shop Now</Button>
                                                     </Card.Body>
                                                 </Card>
                                             </Col>
                                             <Col md={6}>
-                                                <Card className="hover-card">
+                                                <Card>
                                                     <Card.Img
                                                         variant="top"
-                                                        src="https://via.placeholder.com/300x200?text=Milk"
-                                                        alt="Milk"
+                                                        src="/public/vegetables2.jpg"
+                                                        alt="Cake"
+                                                        className="position-relative"
                                                     />
-                                                    <div className="discount-badge">40% OFF</div>
-                                                    <Card.Body>
-                                                        <Card.Title>Milk</Card.Title>
-                                                        <button className="btn btn-success">Shop Now</button>
+                                                    <div className="position-absolute m-3 fs-1 text-white fw-bold">50% <small className="fs-6">OFF</small></div>
+                                                    <Card.Body className="position-absolute text-center text-white fw-bold" style={{ left: '35%', bottom: '15px' }}>
+                                                        <Card.Title>Cake</Card.Title>
+                                                        <Button className="btn btn-success fw-bold">Shop Now</Button>
                                                     </Card.Body>
                                                 </Card>
                                             </Col>
                                         </Row>
                                     </Tab.Pane>
+
                                     <Tab.Pane eventKey="apple-mango">
                                         <Row>
                                             <Col md={6}>
-                                                <Card className="hover-card">
+                                                <Card>
                                                     <Card.Img
                                                         variant="top"
-                                                        src="https://via.placeholder.com/300x200?text=Cake"
+                                                        src="/public/apple1.jpg"
                                                         alt="Cake"
+                                                        className="position-relative"
                                                     />
-                                                    <div className="discount-badge">50% OFF</div>
-                                                    <Card.Body>
+                                                    <div className="position-absolute m-3 fs-1 text-white fw-bold">50% <small className="fs-6">OFF</small></div>
+                                                    <Card.Body className="position-absolute text-center text-white fw-bold" style={{ left: '35%', bottom: '15px' }}>
                                                         <Card.Title>Cake</Card.Title>
-                                                        <button className="btn btn-success">Shop Now</button>
+                                                        <Button className="btn btn-success fw-bold">Shop Now</Button>
                                                     </Card.Body>
                                                 </Card>
                                             </Col>
                                             <Col md={6}>
-                                                <Card className="hover-card">
+                                                <Card>
                                                     <Card.Img
                                                         variant="top"
-                                                        src="https://via.placeholder.com/300x200?text=Milk"
-                                                        alt="Milk"
+                                                        src="/public/apple2.jpg"
+                                                        alt="Cake"
+                                                        className="position-relative"
                                                     />
-                                                    <div className="discount-badge">40% OFF</div>
-                                                    <Card.Body>
-                                                        <Card.Title>Milk</Card.Title>
-                                                        <button className="btn btn-success">Shop Now</button>
+                                                    <div className="position-absolute m-3 fs-1 text-white fw-bold">50% <small className="fs-6">OFF</small></div>
+                                                    <Card.Body className="position-absolute text-center text-white fw-bold" style={{ left: '35%', bottom: '15px' }}>
+                                                        <Card.Title>Cake</Card.Title>
+                                                        <Button className="btn btn-success fw-bold">Shop Now</Button>
                                                     </Card.Body>
                                                 </Card>
                                             </Col>
                                         </Row>
                                     </Tab.Pane>
+
                                     <Tab.Pane eventKey="strawberry">
                                         <Row>
                                             <Col md={6}>
-                                                <Card className="hover-card">
+                                                <Card>
                                                     <Card.Img
                                                         variant="top"
-                                                        src="https://via.placeholder.com/300x200?text=Cake"
+                                                        src="/public/strawberry1.jpg"
                                                         alt="Cake"
+                                                        className="position-relative"
                                                     />
-                                                    <div className="discount-badge">50% OFF</div>
-                                                    <Card.Body>
+                                                    <div className="position-absolute m-3 fs-1 text-white fw-bold">50% <small className="fs-6">OFF</small></div>
+                                                    <Card.Body className="position-absolute text-center text-white fw-bold" style={{ left: '35%', bottom: '15px' }}>
                                                         <Card.Title>Cake</Card.Title>
-                                                        <button className="btn btn-success">Shop Now</button>
+                                                        <Button className="btn btn-success fw-bold">Shop Now</Button>
                                                     </Card.Body>
                                                 </Card>
                                             </Col>
                                             <Col md={6}>
-                                                <Card className="hover-card">
+                                                <Card>
                                                     <Card.Img
                                                         variant="top"
-                                                        src="https://via.placeholder.com/300x200?text=Milk"
-                                                        alt="Milk"
+                                                        src="/public/strawberry2.jpg"
+                                                        alt="Cake"
+                                                        className="position-relative"
                                                     />
-                                                    <div className="discount-badge">40% OFF</div>
-                                                    <Card.Body>
-                                                        <Card.Title>Milk</Card.Title>
-                                                        <button className="btn btn-success">Shop Now</button>
+                                                    <div className="position-absolute m-3 fs-1 text-white fw-bold">50% <small className="fs-6">OFF</small></div>
+                                                    <Card.Body className="position-absolute text-center text-white fw-bold" style={{ left: '35%', bottom: '15px' }}>
+                                                        <Card.Title>Cake</Card.Title>
+                                                        <Button className="btn btn-success fw-bold">Shop Now</Button>
                                                     </Card.Body>
                                                 </Card>
                                             </Col>
                                         </Row>
                                     </Tab.Pane>
-                                    <Tab.Pane eventKey="view-more">
-                                        <Row>
-                                            <Col md={6}>
-                                                <Card className="hover-card">
-                                                    <Card.Img
-                                                        variant="top"
-                                                        src="https://via.placeholder.com/300x200?text=Cake"
-                                                        alt="Cake"
-                                                    />
-                                                    <div className="discount-badge">50% OFF</div>
-                                                    <Card.Body>
-                                                        <Card.Title>Cake</Card.Title>
-                                                        <button className="btn btn-success">Shop Now</button>
-                                                    </Card.Body>
-                                                </Card>
-                                            </Col>
-                                            <Col md={6}>
-                                                <Card className="hover-card">
-                                                    <Card.Img
-                                                        variant="top"
-                                                        src="https://via.placeholder.com/300x200?text=Milk"
-                                                        alt="Milk"
-                                                    />
-                                                    <div className="discount-badge">40% OFF</div>
-                                                    <Card.Body>
-                                                        <Card.Title>Milk</Card.Title>
-                                                        <button className="btn btn-success">Shop Now</button>
-                                                    </Card.Body>
-                                                </Card>
-                                            </Col>
-                                        </Row>
-                                    </Tab.Pane>
+
                                 </Tab.Content>
                             </Col>
                         </Row>

@@ -1,4 +1,5 @@
 import { Tab, Nav, Row, Col, Card, Button, Container } from "react-bootstrap";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const products = {
     all: [
@@ -43,21 +44,21 @@ const PopularProducts = () => {
                         <Row>
                             {/* Sidebar Navigation */}
                             <Col md={3}>
-                                <Nav className="flex-column">
+                                <Nav className="flex-column nav-link-product">
                                     <Nav.Item>
-                                        <Nav.Link eventKey="all" className="border mt-2 text-success">All</Nav.Link>
+                                        <Nav.Link eventKey="all" className="active border mt-2 nav-link-popular">All <FaArrowRightLong /></Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link eventKey="snack" className="border mt-2 text-success">Snack</Nav.Link>
+                                        <Nav.Link eventKey="snack" className="border mt-2 nav-link-popular">Snack <FaArrowRightLong /></Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link eventKey="vegetable" className="border mt-2 text-success">Vegetable</Nav.Link>
+                                        <Nav.Link eventKey="vegetable" className="border mt-2 nav-link-popular">Vegetable <FaArrowRightLong /></Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link eventKey="fruit" className="border mt-2 text-success">Fruit</Nav.Link>
+                                        <Nav.Link eventKey="fruit" className="border mt-2 nav-link-popular">Fruit <FaArrowRightLong /></Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link eventKey="bakery" className="border mt-2 text-success">Bakery</Nav.Link>
+                                        <Nav.Link eventKey="bakery" className="border mt-2 nav-link-popular">Bakery <FaArrowRightLong /></Nav.Link>
                                     </Nav.Item>
                                 </Nav>
                                 <img src="/public/product-banner.jpg" alt="" className="mt-4 product-banner-img" />

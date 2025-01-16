@@ -45,12 +45,10 @@ const Greatdeal = () => {
 
     window.onload = function () {
 
-        var deadline = new Date("January 1, 2025 12:00:00");
+        var deadline = new Date("January 5, 2025 00:00:00");
         startTimer("clock", deadline);
 
     };
-
-
 
     return (
         <>

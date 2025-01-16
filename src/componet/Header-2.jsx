@@ -31,6 +31,9 @@ const Header2 = () => {
                                 <Accordion defaultActiveKey="1">
                                     <Accordion.Item eventKey="0">
                                         <Accordion.Header>Home</Accordion.Header>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="0">
+                                        <Accordion.Header>Category</Accordion.Header>
                                         <Accordion.Body>
                                             <ul>
                                                 <li> Shop Left sidebar</li>
@@ -39,7 +42,7 @@ const Header2 = () => {
                                             </ul>
                                         </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey="1">
+                                    <Accordion.Item eventKey="0">
                                         <Accordion.Header>Products</Accordion.Header>
                                         <Accordion.Body>
                                             <ul>
@@ -66,13 +69,16 @@ const Header2 = () => {
                                             </ul>
                                         </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey="1">
+                                    <Accordion.Item eventKey="0">
                                         <Accordion.Header>Blog</Accordion.Header>
                                         <Accordion.Body>
                                             <ul>
-                                                <li>Shop Left sidebar</li>
-                                                <li>Shop Right sidebar</li>
+                                                <li>Left sidebar</li>
+                                                <li>Right sidebar</li>
                                                 <li>Full Width</li>
+                                                <li>Detail Left sidebar</li>
+                                                <li>Detail Right sidebar</li>
+                                                <li>Detail Full Width</li>
                                             </ul>
                                         </Accordion.Body>
                                     </Accordion.Item>
@@ -80,9 +86,7 @@ const Header2 = () => {
                                         <Accordion.Header>Products</Accordion.Header>
                                         <Accordion.Body>
                                             <ul>
-                                                <li>Shop Left sidebar</li>
-                                                <li>Shop Right sidebar</li>
-                                                <li>Product Full Width</li>
+                                                <li>Products</li>
                                             </ul>
                                         </Accordion.Body>
                                     </Accordion.Item>
@@ -128,8 +132,6 @@ const Header2 = () => {
                                 </NavDropdown>
                                 <NavDropdown title="Elements" id="basic-nav-dropdown">
                                     <NavDropdown.Item href="#action/3.1"><Link to={'/products'}>Products</Link></NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.2">Typography</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Buttons</NavDropdown.Item>
                                 </NavDropdown>
                             </Nav>
                             <div className=" ms-5 ">

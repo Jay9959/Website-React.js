@@ -39,31 +39,11 @@ const Header1 = () => {
                 </div>
                 <div className="me-2">
                     <FaRegHeart />
-                    <DropdownButton
-                        variant="bg-transparent"
-                        title="Wishlist"
-                        id="input-group-dropdown-2"
-                        align="center"
-                        className='fs-bold'
-                    >
-                        <Dropdown.Item href="#">Register</Dropdown.Item>
-                        <Dropdown.Item href="#">Checkout</Dropdown.Item>
-                        <Dropdown.Item href="#">Login</Dropdown.Item>
-                    </DropdownButton>
+                    <DropdownButton variant="bg-transparent" title="Wishlist" align="center" className='fs-bold'></DropdownButton>
                 </div>
                 <div className="me-2">
                     <MdOutlineShoppingCart />
-                    <DropdownButton
-                        variant="bg-transparent"
-                        title="Cart"
-                        id="input-group-dropdown-2"
-                        align="center"
-                        className='fs-bold'
-                    >
-                        <Dropdown.Item href="#">Register</Dropdown.Item>
-                        <Dropdown.Item href="#">Checkout</Dropdown.Item>
-                        <Dropdown.Item href="#">Login</Dropdown.Item>
-                    </DropdownButton>
+                    <DropdownButton variant="bg-transparent" title="Cart" align="center" className='fs-bold'></DropdownButton>
                 </div>
             </InputGroup>
         </Container >

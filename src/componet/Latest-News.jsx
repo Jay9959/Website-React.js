@@ -58,7 +58,7 @@ const NewsCarousel = () => {
     return (
         <>
             <Container>
-                <div className="mt-5">
+                <div data-aos="fade-up" data-aos-delay="6       00" className="mt-5">
                     <h2 className="text-center mb-4">Latest News</h2>
                     <p className="text-center text-muted mb-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

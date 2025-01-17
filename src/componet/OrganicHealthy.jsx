@@ -51,7 +51,7 @@ const OrganicHealthy = () => {
     return (
         <>
             <Container>
-                <div className="mt-5">
+                <div data-aos="fade-up" data-aos-delay="100" className="mt-5">
                     <Row>
                         <Col xs={12} md={7}>
                             <Slider {...settings}>

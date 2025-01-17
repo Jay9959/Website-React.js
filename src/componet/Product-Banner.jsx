@@ -13,7 +13,7 @@ const ProductBanner = () => {
     };
     return (
         <>
-            <Container>
+            <Container data-aos="fade-up" data-aos-delay="300">
                 <div className="slider-container mt-5">
                     <Slider {...settings}>
                         <div className="slider-contant position-relative mt-5">

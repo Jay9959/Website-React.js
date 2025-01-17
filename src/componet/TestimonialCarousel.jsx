@@ -56,7 +56,7 @@ const TestimonialCarousel = () => {
     return (
         <>
             <Container>
-                <div className="mt-5">
+                <div data-aos="fade-up" data-aos-delay="200" className="mt-5">
                     <h2 className="text-center mb-4">Great Words From People</h2>
                     <p className="text-center text-muted mb-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

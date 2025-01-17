@@ -34,7 +34,7 @@ const PopularProducts = () => {
     return (
         <>
             <Container>
-                <div className="mt-5">
+                <div data-aos="fade-up" data-aos-delay="500" className="mt-5">
                     <h2 className="text-center">Popular Products</h2>
                     <p className="text-center text-muted mb-5">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore lacus vel facilisis.

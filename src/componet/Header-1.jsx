@@ -32,9 +32,9 @@ const Header1 = () => {
                         align="center"
                         className='fs-bold'
                     >
-                        <Dropdown.Item href="#">Register</Dropdown.Item>
-                        <Dropdown.Item href="#">Checkout</Dropdown.Item>
-                        <Dropdown.Item href="#">Login</Dropdown.Item>
+                        <Dropdown.Item href="/registerForm">Register</Dropdown.Item>
+                        <Dropdown.Item href="/checkout">Checkout</Dropdown.Item>
+                        <Dropdown.Item href="/loginForm">Login</Dropdown.Item>
                     </DropdownButton>
                 </div>
                 <div className="me-2">

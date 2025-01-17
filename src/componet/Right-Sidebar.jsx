@@ -4,7 +4,7 @@ const RightSidebar = () => {
     return (
         <>
             <Container>
-                <div className="mt-5">
+                <div data-aos="fade-up" data-aos-duration="2000" className="mt-5">
                     <Row>
                         <div className="col-lg-9">
                             <div className="border mb-4">

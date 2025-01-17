@@ -19,7 +19,7 @@ const LoginForm = () => {
 
     return (
         <>
-            <Container className="d-flex align-items-center justify-content-center min-vh-100">
+            <Container data-aos="fade-up" data-aos-duration="2000" className="d-flex align-items-center justify-content-center min-vh-100">
                 <div className="mt-5">
                     <Card style={{ width: '400px', padding: '2rem' }}>
                         <Card.Body>

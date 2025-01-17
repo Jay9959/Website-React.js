@@ -25,7 +25,7 @@ const RegisterForm = () => {
 
     return (
         <Container className="form-container">
-            <div className="d-flex justify-content-center align-items-center mt-5">
+            <div data-aos="fade-up" data-aos-duration="2000" className="d-flex justify-content-center align-items-center mt-5">
                 <div className='border p-5'>
                     <div className="text-center mb-4">
                         <div className="d-flex justify-content-center align-items-center gap-2 mb-3">

@@ -7,7 +7,7 @@ const DetailFullWidth = () => {
     return (
         <>
             <Container>
-                <div className="mt-5">
+                <div data-aos="fade-up" data-aos-duration="2000" className="mt-5">
                     <div className="w-100">
                         <div className="detailsidebar-img">
                             <img src="/public/blog-1.jpg" alt="" className="w-100" />

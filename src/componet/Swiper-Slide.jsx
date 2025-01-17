@@ -16,7 +16,7 @@ const SwiperSlide = () => {
     };
     return (
         <>
-            <Container data-aos="fade-up" data-aos-delay="500">
+            <Container data-aos="fade-up" data-aos-duration="2000">
                 <div className="slider-container mt-5">
                     <Slider {...settings}>
                         <div className="p-2 mt-5">

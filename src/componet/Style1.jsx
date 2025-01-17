@@ -5,7 +5,7 @@ const Style1 = () => {
     return (
         <>
             {/* STYLE START  */}
-            <Container>
+            <Container data-aos="fade-up" data-aos-duration="1000">
                 <div className="text-center border-top pt-5">
                     <h2>Style 1</h2>
                     <p className="text-body-tertiary w-50 m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore lacus vel facilisis.</p>

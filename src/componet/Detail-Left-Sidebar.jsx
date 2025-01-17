@@ -10,7 +10,7 @@ const DetailLeftSidebar = () => {
             <Container>
                 <div className="mt-5">
                     <Row>
-                        <div className="col-lg-3 flex">
+                        <div data-aos="fade-up" data-aos-duration="3000" className="col-lg-3 flex">
                             <Form className="d-flex my-3" role="search">
                                 <input className="form-control me-2" type="search" placeholder="Search here" aria-label="Search" />
                                 <Button className="btn btn-success" type="submit">Search</Button>
@@ -72,7 +72,7 @@ const DetailLeftSidebar = () => {
                                 <Button>Juice</Button>
                             </div>
                         </div>
-                        <div className="col-lg-9">
+                        <div data-aos="fade-up" data-aos-duration="2000" className="col-lg-9">
                             <div className="detailsidebar-img">
                                 <img src="/public/blog-1.jpg" alt="" className="w-100" />
                             </div>

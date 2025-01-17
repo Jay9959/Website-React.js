@@ -5,7 +5,7 @@ const Wishlist = () => {
     return (
         <>
             <Container>
-                <div className="mt-5">
+                <div data-aos="fade-up" data-aos-duration="2000" className="mt-5">
                     <Row>
                         <Col>
                             <Card className="p-3" style={{ width: '19rem' }}>

@@ -80,7 +80,7 @@ const ProductLeftsidebar = () => {
             <Container>
                 <div className="mt-5">
                     <Row>
-                        <div className="asaid-page col-lg-3 mt-5 flex">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="asaid-page col-lg-3 mt-5 flex">
                             <h5>Category</h5>
                             <Form>
                                 <Form.Check type="checkbox" label="Juice & Drinks [20]" />
@@ -134,7 +134,7 @@ const ProductLeftsidebar = () => {
                                 <Button>Juice</Button>
                             </div>
                         </div>
-                        <div className="col-lg-9 mt-5">
+                        <div data-aos="fade-up" data-aos-duration="2000" className="col-lg-9 mt-5">
                             <Row>
                                 <Col md={6}>
                                     <Card>
@@ -432,7 +432,7 @@ const ProductLeftsidebar = () => {
                             </Row>
                         </div>
                     </Row >
-                    <Row>
+                    <Row data-aos="fade-up" data-aos-duration="3000"    >
                         <Col>
                             <Card className="p-3 mt-5" style={{ width: '15rem' }}>
 

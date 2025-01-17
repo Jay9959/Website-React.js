@@ -4,7 +4,7 @@ const FullWidth = () => {
     return (
         <>
             <Container>
-                <div className="mt-5">
+                <div data-aos="fade-up" data-aos-duration="2000" className="mt-5">
                     <Row>
                         <div className="col-lg-6 mb-4">
                             <Card className="border-1">

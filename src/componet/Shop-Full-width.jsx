@@ -8,7 +8,7 @@ const ShopFullwidth = () => {
     return (
         <>
             <Container>
-                <div className="mt-5">
+                <div data-aos="fade-up" data-aos-duration="3000" className="mt-5">
                     <Row>
                         <div className="main-class d-flex justify-content-between align-items-center p-3 mt-3 border">
                             <ButtonGroup>

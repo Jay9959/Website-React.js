@@ -25,13 +25,13 @@ const Banner = () => {
                     </div>
                     <Container>
                         <div className="position-absolute start-50px" style={{ top: '30%' }}>
-                            <h5 data-aos="fade-up" data-aos-delay="200"><span className="text-decoration-underline text-success">100%</span> Organic Vegetables</h5>
-                            <h1 data-aos="fade-up" data-aos-delay="300" className="display-4 fw-bold my-4">Explore fresh &<br />juicy fruits.</h1>
-                            <p data-aos="fade-up" data-aos-delay="400">
+                            <h5 data-aos="fade-up" data-aos-duration="1000"><span className="text-decoration-underline text-success">100%</span> Organic Vegetables</h5>
+                            <h1 data-aos="fade-up" data-aos-duration="2000" className="display-4 fw-bold my-4">Explore fresh &<br />juicy fruits.</h1>
+                            <p data-aos="fade-up" data-aos-duration="3000">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit<br />Amet
                                 reiciendis beatae consequuntur.
                             </p>
-                            <Button data-aos="fade-up" data-aos-delay="500" variant="success" className="shop-now-btn">
+                            <Button data-aos="fade-up" data-aos-duration="3000" variant="success" className="shop-now-btn">
                                 Shop Now
                             </Button>
                         </div>
@@ -49,9 +49,9 @@ const Banner = () => {
                     </div>
                     <Container>
                         <div className="position-absolute start-50px" style={{ top: '30%' }}>
-                            <h5 data-aos="fade-up" data-aos-delay="200"><span className="text-decoration-underline text-success">100%</span> Organic Vegetables</h5>
-                            <h1 data-aos="fade-up" data-aos-delay="300" className="display-4 fw-bold my-4">The best way to<br />stuff your wallet.</h1>
-                            <p data-aos="fade-up" data-aos-delay="400">
+                            <h5><span className="text-decoration-underline text-success">100%</span> Organic Vegetables</h5>
+                            <h1 className="display-4 fw-bold my-4">The best way to<br />stuff your wallet.</h1>
+                            <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit<br />Amet
                                 reiciendis beatae consequuntur.
                             </p>

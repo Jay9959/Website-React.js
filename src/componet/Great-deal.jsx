@@ -44,10 +44,8 @@ const Greatdeal = () => {
     }
 
     window.onload = function () {
-
         var deadline = new Date("January 5, 2025 00:00:00");
         startTimer("clock", deadline);
-
     };
 
     return (
@@ -61,7 +59,7 @@ const Greatdeal = () => {
                     />
                 </div>
                 <Container>
-                    <div data-aos="fade-up" data-aos-delay="400" className="btoom-50 border greatdeal-contant p-3">
+                    <div data-aos="fade-up" data-aos-duration="2000" className="btoom-50 border greatdeal-contant p-3">
                         <h2><span className="text-success fs-bold me-2">35%</span><small className="fs-5">OFF</small></h2>
                         <h2>Great deal on organic food.</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br />do maecenas accumsan lacus vel facilisis.</p>

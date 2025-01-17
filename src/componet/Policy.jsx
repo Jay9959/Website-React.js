@@ -4,7 +4,7 @@ import { Container, Row } from "react-bootstrap"
 const Policy = () => {
     return (
         <>
-            <Container>
+            <Container data-aos="fade-up" data-aos-duration="2000">
                 <div className="text-center mt-5">
                     <h2>Privacy Policy</h2>
                     <p className="text-secondary">Check ou Privacy Policy and Conditions</p>

@@ -7,7 +7,7 @@ const Crat = () => {
     return (
         <Container>
             <div className="mt-5 table-content">
-                <Table className="w-100">
+                <Table data-aos="fade-up" data-aos-duration="3000" className="w-100">
                     <thead>
                         <tr>
                             <th>Product</th>
@@ -144,7 +144,7 @@ const Crat = () => {
                     <a href="javacsript:void(0)" className="text-decoration-underline">Continue Shopping</a>
                     <Button style={{ marginLeft: "92%" }}>Check Out</Button>
                 </div>
-                <Row>
+                <Row data-aos="fade-up" data-aos-duration="2000">
                     <Col>
                         <Card className="p-3 mt-5" style={{ width: '15rem' }}>
 

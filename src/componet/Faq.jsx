@@ -53,7 +53,7 @@ const Faq = () => {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <Accordion>
+                            <Accordion data-aos="fade-up" data-aos-duration="2000">
                                 {faqs.map((faq, index) => (
                                     <Accordion.Item className="my-3" eventKey={index.toString()} key={index}>
                                         <Accordion.Header>{faq.question}</Accordion.Header>

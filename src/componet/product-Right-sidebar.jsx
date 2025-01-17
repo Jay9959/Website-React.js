@@ -81,7 +81,7 @@ const ProductRightsidebar = () => {
             <Container>
                 <div className="mt-5">
                     <Row>
-                        <div className="col-lg-9 mt-5">
+                        <div data-aos="fade-up" data-aos-duration="3000" className="col-lg-9 mt-5">
                             <Row>
                                 <Col md={6}>
                                     <Card>
@@ -378,7 +378,7 @@ const ProductRightsidebar = () => {
                                 </Col>
                             </Row>
                         </div>
-                        <div className="product-page-name col-lg-3 flex mt-5">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="product-page-name col-lg-3 flex mt-5">
                             <h5>Category</h5>
                             <Form>
                                 <Form.Check type="checkbox" label="Juice & Drinks [20]" />
@@ -433,7 +433,7 @@ const ProductRightsidebar = () => {
                             </div>
                         </div>
                     </Row>
-                    <Row>
+                    <Row data-aos="fade-up" data-aos-duration="3000">
                         <Col>
                             <Card className="p-3 mt-5" style={{ width: '15rem' }}>
 

@@ -26,7 +26,7 @@ const ShopRightsidebar = () => {
             <Container>
                 <div className="mt-5">
                     <Row>
-                        <div className="col-lg-9 ">
+                        <div data-aos="fade-up" data-aos-duration="2000" className="col-lg-9">
                             <Row className="align-items-center mb-3">
                                 <div className="main-class d-flex justify-content-between align-items-center p-3 border">
                                     <ButtonGroup>
@@ -362,7 +362,7 @@ const ShopRightsidebar = () => {
                                 </div>
                             </Row>
                         </div>
-                        <div className="asaid col-lg-3 flex">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="asaid col-lg-3 flex">
                             <h5>Category</h5>
                             <Form>
                                 <Form.Check type="checkbox" label="Juice & Drinks [20]" />

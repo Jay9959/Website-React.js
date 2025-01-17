@@ -65,7 +65,7 @@ const ProductFullWidth = () => {
     return (
         <>
             <Container>
-                <div className="mt-5">
+                <div data-aos="fade-up" data-aos-duration="1000" className="mt-5">
                     <Row>
                         <div className="w-100 mt-5">
                             <Row>
@@ -364,7 +364,7 @@ const ProductFullWidth = () => {
                             </Row>
                         </div>
                     </Row >
-                    <Row>
+                    <Row data-aos="fade-up" data-aos-duration="3000">
                         <Col>
                             <Card className="p-3 mt-5" style={{ width: '15rem' }}>
 

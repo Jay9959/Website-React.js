@@ -191,7 +191,7 @@ const ShopLeftsidebar = () => {
                                                         <IoMdStar />
                                                         <span className="fs-6">(4.5)</span>
                                                     </div>
-                                                    <Card.Title className="fs-6 my-2">Organic fresh venila farm watermelon 5kg</Card.Title>
+                                                    <Card.Title className="fs-6 my-2">Organic fresh watermelon 5kg</Card.Title>
                                                     <Card.Text className="fs-6 text-success fw-bold">
                                                         $50.30
                                                         <span className="ms-3 text-body-tertiary"><s>$72.60</s></span>

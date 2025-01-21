@@ -12,12 +12,6 @@
 <body>
   <div id="root"></div>
 
-  <!-- loader -->
-
-  <div class="loader-overlay">
-    <img src="/public/Intersection-unscreen.gif" style="width: 60px;">
-  </div>
-
   <!-- BACK TO TOP  -->
 
   <button class="btn btn-sm btn-primary rounded-circle position-fixed bottom-0 end-0 translate-middle d-none fs-4"
@@ -42,11 +36,7 @@
     }
   });
 
-  // loader
-
-  $(window).on("load", function () {
-    $(".loader-overlay").fadeOut(9000);
-  });
+  // Back TO TOP
 
   window.onscroll = () => {
     toggleTopButton();

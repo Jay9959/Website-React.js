@@ -100,39 +100,39 @@ const Header2 = () => {
                             <Navbar.Collapse id="basic-navbar-nav">
 
                                 <Nav className="ms-auto">
-                                    <Nav.Link><Link to={'/'}>Home</Link></Nav.Link>
+                                    <Nav.Link><Link className='text-dark' to={'/'}>Home</Link></Nav.Link>
                                     <NavDropdown title="Category" id="basic-nav-dropdown">
-                                        <NavDropdown.Item href="#action/3.1"><Link to={'/shopLeftsidebar'}>Shop Left sidebar</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.1"><Link to={'/shopRightsidebar'}>Shop Right sidebar</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.1"><Link to={'/shopFullWidthsidebar'}>Full Width sidebar</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.1"><Link className='text-dark' to={'/shopLeftsidebar'}>Shop Left sidebar</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.1"><Link className='text-dark' to={'/shopRightsidebar'}>Shop Right sidebar</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.1"><Link className='text-dark' to={'/shopFullWidthsidebar'}>Full Width sidebar</Link></NavDropdown.Item>
                                     </NavDropdown>
                                     <NavDropdown title="Products" id="basic-nav-dropdown">
-                                        <NavDropdown.Item href="#action/3.1"><Link to={'/productLeftsidebar'}>Product Left sidebar</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.1"><Link to={'/productRightsidebar'}>Product Right sidebar</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.1"><Link to={'/productFullWidth'}>Product Full Width</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.1"><Link className='text-dark' to={'/productLeftsidebar'}>Product Left sidebar</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.1"><Link className='text-dark' to={'/productRightsidebar'}>Product Right sidebar</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.1"><Link className='text-dark' to={'/productFullWidth'}>Product Full Width</Link></NavDropdown.Item>
                                     </NavDropdown>
                                     <NavDropdown title="Pages" id="basic-nav-dropdown">
-                                        <NavDropdown.Item href="#action/3.1"><Link to={'/about'}>About Us</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.1"><Link to={'contactUs'}>Contact US</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.2"><Link to={'/cart'}>Cart</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3"><Link to={'/checkout'}>Checkout</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3"><Link to={'/trackOrder'}>Track Order</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3"><Link to={'/wishlist'}>Wishlist</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3"><Link to={'/faq'}>Faq</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3"><Link to={'/loginForm'}>Login</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3"><Link to={'/registerForm'}>Register</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3"><Link to={'/policy'}>Policy</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.1"><Link className='text-dark' to={'/about'}>About Us</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.1"><Link className='text-dark' to={'contactUs'}>Contact US</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.2"><Link className='text-dark' to={'/cart'}>Cart</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.3"><Link className='text-dark' to={'/checkout'}>Checkout</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.3"><Link className='text-dark' to={'/trackOrder'}>Track Order</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.3"><Link className='text-dark' to={'/wishlist'}>Wishlist</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.3"><Link className='text-dark' to={'/faq'}>Faq</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.3"><Link className='text-dark' to={'/loginForm'}>Login</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.3"><Link className='text-dark' to={'/registerForm'}>Register</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.3"><Link className='text-dark' to={'/policy'}>Policy</Link></NavDropdown.Item>
                                     </NavDropdown>
                                     <NavDropdown title="Blog" id="basic-nav-dropdown">
-                                        <NavDropdown.Item href="#action/3.1"><Link to={'/leftSidebar'}>Left Sidebar</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.2"><Link to={'/rightSidebar'}>Right Sidebar</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3"><Link to={'/fullWidth'}>Full Width</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3"><Link to={'/detailLeftSidebar'}>Detail Left Sidebar</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3"><Link to={'/detailRightSidebar'}>Detail Right Sidebar</Link></NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3"><Link to={'/detailFullWidth'}>Detail Full Width</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.1"><Link className='text-dark' to={'/leftSidebar'}>Left Sidebar</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.2"><Link className='text-dark' to={'/rightSidebar'}>Right Sidebar</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.3"><Link className='text-dark' to={'/fullWidth'}>Full Width</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.3"><Link className='text-dark' to={'/detailLeftSidebar'}>Detail Left Sidebar</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.3"><Link className='text-dark' to={'/detailRightSidebar'}>Detail Right Sidebar</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.3"><Link className='text-dark' to={'/detailFullWidth'}>Detail Full Width</Link></NavDropdown.Item>
                                     </NavDropdown>
                                     <NavDropdown title="Elements" id="basic-nav-dropdown">
-                                        <NavDropdown.Item href="#action/3.1"><Link to={'/products'}>Products</Link></NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.1"><Link className='text-dark' to={'/products'}>Products</Link></NavDropdown.Item>
                                     </NavDropdown>
                                 </Nav>
                                 <div className=" ms-5 ">

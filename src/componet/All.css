@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+.dropdown-item:hover {
+    background-color: #64b496;
+}
+
 /* HEADER  */
 
 header.mab {
